@@ -13,26 +13,26 @@
 <body>
   <section>
     <div class="max-length island">
-      <h1>Want to go to Mars?</h1>
-      <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+      <h1 class="pad-t">Want to go to Mars?</h1>
+      <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 
       <form action="index.html" method="post">
         <fieldset>
-          <legend>Personal details</legend>
+          <legend class="giga italic push-1-4">Personal details</legend>
           <div class="grid">
-            <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2">
+            <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2 push-1-2 pad-t-1-2">
               <label for="name">Name</label>
               <input id="name" required>
             </div>
-            <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2">
+            <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2 push-1-2 pad-t-1-2">
               <label for="age">Age</label>
               <input id="age">
             </div>
-            <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2">
+            <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2 push-1-2 pad-t-1-2">
               <label for="email">Email</label>
               <input id="email" type="email" required>
             </div>
-            <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2">
+            <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2 push-1-2 pad-t-1-2">
               <label for="fitness">Physical fitness</label>
               <select id="fitness">
                 <option>Super-human</option>
@@ -42,21 +42,21 @@
               </select>
             </div>
           </div>
-            <div>
-              <label for="address">Address</label>
-              <textarea id="address" required></textarea>
-            </div>
+          <div class="pad-t-1-2">
+            <label for="address">Address</label>
+            <textarea id="address" required></textarea>
+          </div>
         </fieldset>
 
         <fieldset>
           <legend>Mission statement</legend>
-          <div class="">
+          <div>
             <label for="statement">Why do you want to go to Mars?</label>
             <textarea id="statement"></textarea>
           </div>
         </fieldset>
-
-        <button class="center-block block" type="button" name="button">Register for the trip!</button>
+        <button class="btn" type="button">Register for the trip!</button>
+        <input type="hidden" name="_subject" value="Request to join the mission">
       </form>
     </div>
   </section>
