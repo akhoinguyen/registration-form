@@ -12,37 +12,51 @@
 </head>
 <body>
   <section>
-    <div class="max-length">
+    <div class="max-length island">
       <h1>Want to go to Mars?</h1>
       <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 
-      <h2>Personal details</h2>
-      <form class="" action="index.html" method="post">
-        <div class="">
-          <label for="name">Name</label>
-          <input id="name" required>
-        </div>
-        <div class="">
-          <label for="age">Age</label>
-          <input id="age">
-        </div>
-        <div class="">
-          <label for="email">Email</label>
-          <input id="email" type="email" required>
-        </div>
-        <div class="">
-          <label for="fitness">Physical fitness</label>
-          <select id="fitness">
-            <option>Super-human</option>
-            <option>Fit as a fiddle</option>
-            <option>Not terribly strong</option>
-            <option>A little couch-potato-y</option>
-          </select>
-        </div>
-        <div class="">
-          <label for="address">Address</label>
-          <textarea id="address" required></textarea>
-        </div>
+      <form action="index.html" method="post">
+        <fieldset>
+          <legend>Personal details</legend>
+          <div class="grid">
+            <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2">
+              <label for="name">Name</label>
+              <input id="name" required>
+            </div>
+            <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2">
+              <label for="age">Age</label>
+              <input id="age">
+            </div>
+            <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2">
+              <label for="email">Email</label>
+              <input id="email" type="email" required>
+            </div>
+            <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2">
+              <label for="fitness">Physical fitness</label>
+              <select id="fitness">
+                <option>Super-human</option>
+                <option>Fit as a fiddle</option>
+                <option>Not terribly strong</option>
+                <option>A little couch-potato-y</option>
+              </select>
+            </div>
+          </div>
+            <div>
+              <label for="address">Address</label>
+              <textarea id="address" required></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Mission statement</legend>
+          <div class="">
+            <label for="statement">Why do you want to go to Mars?</label>
+            <textarea id="statement"></textarea>
+          </div>
+        </fieldset>
+
+        <button class="center-block block" type="button" name="button">Register for the trip!</button>
       </form>
     </div>
   </section>
