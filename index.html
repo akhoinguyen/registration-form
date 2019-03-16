@@ -16,7 +16,7 @@
       <h1 class="pad-t">Want to go to Mars?</h1>
       <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
 
-      <form action="index.html" method="post">
+      <form action="https://formspree.io/bradlet@algonquincollege.com" method="POST">
         <fieldset>
           <legend class="giga italic push-1-4">Personal details</legend>
           <div class="grid">
@@ -30,11 +30,11 @@
             </div>
             <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2 push-1-2 pad-t-1-2">
               <label for="email">Email</label>
-              <input id="email" type="email" required>
+              <input id="email" type="email" name="email" required>
             </div>
             <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2 push-1-2 pad-t-1-2">
               <label for="fitness">Physical fitness</label>
-              <select id="fitness">
+              <select id="fitness" name="fitness">
                 <option>Super-human</option>
                 <option>Fit as a fiddle</option>
                 <option>Not terribly strong</option>
@@ -44,7 +44,7 @@
           </div>
           <div class="pad-t-1-2">
             <label for="address">Address</label>
-            <textarea id="address" required></textarea>
+            <textarea id="address" name="address" required></textarea>
           </div>
         </fieldset>
 
@@ -55,7 +55,7 @@
             <textarea id="statement"></textarea>
           </div>
         </fieldset>
-        <button class="btn" type="button">Register for the trip!</button>
+        <button class="btn" type="submit">Register for the trip!</button>
         <input type="hidden" name="_subject" value="Request to join the mission">
       </form>
     </div>
